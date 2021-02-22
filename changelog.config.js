@@ -60,7 +60,7 @@ module.exports = {
   list: Object.keys(COMMIT_TYPES),
   maxMessageLength: 100,
   minMessageLength: 0,
-  questions: ['type', 'subject', 'breaking', 'issues'],
+  questions: ['type', 'subject'],
   scopes: [],
   types: COMMIT_TYPES,
 };
