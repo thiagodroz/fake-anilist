@@ -1,1 +1,1 @@
-export * from './lib/workshop-web';
+export * from './lib/atoms';

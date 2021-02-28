@@ -1,0 +1,34 @@
+{
+  "margin": {
+    "label": "margin",
+    "options": {
+      "none": "none",
+      "xxsm": "xxsm",
+      "xsm": "xsm",
+      "sm": "sm",
+      "md": "md",
+      "lg": "lg",
+      "xlg": "xlg",
+      "xxlg": "xxlg",
+      "xxxlg": "xxxlg",
+      "auto": "auto"
+    },
+    "default": "none"
+  },
+  "padding": {
+    "label": "padding",
+    "options": {
+      "none": "none",
+      "xxsm": "xxsm",
+      "xsm": "xsm",
+      "sm": "sm",
+      "md": "md",
+      "lg": "lg",
+      "xlg": "xlg",
+      "xxlg": "xxlg",
+      "xxxlg": "xxxlg",
+      "auto": "auto"
+    },
+    "default": "none"
+  }
+}
