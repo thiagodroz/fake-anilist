@@ -27,6 +27,7 @@
     "website": { "tags": [] },
     "website-e2e": { "tags": [], "implicitDependencies": ["website"] },
     "apollo": { "tags": [] },
-    "workshop-web": { "tags": [] }
+    "workshop-web": { "tags": [] },
+    "styles": { "tags": [] }
   }
 }

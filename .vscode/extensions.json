@@ -1,3 +1,13 @@
 {
-  "recommendations": ["esbenp.prettier-vscode", "firsttris.vscode-jest-runner"]
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "aaron-bond.better-comments",
+    "editorconfig.editorconfig",
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "graphql.vscode-graphql",
+    "silvenon.mdx",
+    "jonkwheeler.styled-components-snippets",
+    "jpoissonnier.vscode-styled-components"
+  ]
 }

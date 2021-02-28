@@ -8,6 +8,7 @@ This project was generated using [Nx](https://nx.dev).
 ## Libraries
 
 - [Apollo](docs/libraries/apollo.md)
+- [Styles](docs/libs/styles.md)
 - [Workshop Web](docs/libs/workshop-web.md)
 
 ## Generate an application
