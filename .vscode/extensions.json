@@ -8,6 +8,7 @@
     "graphql.vscode-graphql",
     "silvenon.mdx",
     "jonkwheeler.styled-components-snippets",
-    "jpoissonnier.vscode-styled-components"
+    "jpoissonnier.vscode-styled-components",
+    "firsttris.vscode-jest-runner"
   ]
 }

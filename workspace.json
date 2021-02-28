@@ -1,11 +1,20 @@
 {
   "version": 2,
-  "cli": { "defaultCollection": "@nrwl/next" },
+  "cli": {
+    "defaultCollection": "@nrwl/next"
+  },
   "defaultProject": "website",
   "generators": {
-    "@nrwl/react": { "application": { "babel": true } },
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
     "@nrwl/next": {
-      "application": { "style": "styled-components", "linter": "eslint" }
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
     }
   },
   "projects": {
@@ -16,16 +25,23 @@
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "root": "apps/website",
             "outputPath": "dist/apps/website"
           },
-          "configurations": { "production": {} }
+          "configurations": {
+            "production": {}
+          }
         },
         "serve": {
           "executor": "@nrwl/next:server",
-          "options": { "buildTarget": "website:build", "dev": true },
+          "options": {
+            "buildTarget": "website:build",
+            "dev": true
+          },
           "configurations": {
             "production": {
               "buildTarget": "website:build:production",
@@ -35,11 +51,15 @@
         },
         "export": {
           "executor": "@nrwl/next:export",
-          "options": { "buildTarget": "website:build:production" }
+          "options": {
+            "buildTarget": "website:build:production"
+          }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/website"],
+          "outputs": [
+            "coverage/apps/website"
+          ],
           "options": {
             "jestConfig": "apps/website/jest.config.js",
             "passWithNoTests": true
@@ -48,7 +68,9 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/website/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "apps/website/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         }
       }
@@ -66,12 +88,18 @@
             "devServerTarget": "website:serve"
           },
           "configurations": {
-            "production": { "devServerTarget": "website:serve:production" }
+            "production": {
+              "devServerTarget": "website:serve:production"
+            }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "options": { "lintFilePatterns": ["apps/website-e2e/**/*.{js,ts}"] }
+          "options": {
+            "lintFilePatterns": [
+              "apps/website-e2e/**/*.{js,ts}"
+            ]
+          }
         }
       }
     },
@@ -83,12 +111,16 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/apollo/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "libs/apollo/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/apollo"],
+          "outputs": [
+            "coverage/libs/apollo"
+          ],
           "options": {
             "jestConfig": "libs/apollo/jest.config.js",
             "passWithNoTests": true
@@ -104,12 +136,16 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/workshop-web/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "libs/workshop-web/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/workshop-web"],
+          "outputs": [
+            "coverage/libs/workshop-web"
+          ],
           "options": {
             "jestConfig": "libs/workshop-web/jest.config.js",
             "passWithNoTests": true
@@ -120,19 +156,33 @@
           "options": {
             "uiFramework": "@storybook/react",
             "port": 4400,
-            "config": { "configFolder": "libs/workshop-web/.storybook" }
+            "config": {
+              "configFolder": "libs/workshop-web/.storybook"
+            }
           },
-          "configurations": { "ci": { "quiet": true } }
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
         },
         "build-storybook": {
           "executor": "@nrwl/storybook:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "uiFramework": "@storybook/react",
             "outputPath": "dist/storybook/workshop-web",
-            "config": { "configFolder": "libs/workshop-web/.storybook" }
+            "config": {
+              "configFolder": "libs/workshop-web/.storybook"
+            }
           },
-          "configurations": { "ci": { "quiet": true } }
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
         }
       }
     },
@@ -144,14 +194,95 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/styles/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "libs/styles/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/styles"],
+          "outputs": [
+            "coverage/libs/styles"
+          ],
           "options": {
             "jestConfig": "libs/styles/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "mobile": {
+      "root": "apps/mobile",
+      "sourceRoot": "apps/mobile/src",
+      "projectType": "application",
+      "generators": {},
+      "targets": {
+        "start": {
+          "executor": "@nrwl/react-native:start",
+          "options": {
+            "port": 8081
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "nx start mobile"
+          }
+        },
+        "run-ios": {
+          "executor": "@nrwl/react-native:run-ios",
+          "options": {}
+        },
+        "bundle-ios": {
+          "executor": "@nrwl/react-native:bundle",
+          "outputs": [
+            "apps/mobile/build"
+          ],
+          "options": {
+            "entryFile": "apps/mobile/src/main.tsx",
+            "platform": "ios",
+            "bundleOutput": "dist/apps/mobile/ios/main.bundle"
+          }
+        },
+        "run-android": {
+          "executor": "@nrwl/react-native:run-android",
+          "options": {}
+        },
+        "build-android": {
+          "executor": "@nrwl/react-native:build-android",
+          "outputs": [
+            "apps/mobile/android/app/build/outputs/bundle",
+            "apps/mobile/android/app/build/outputs/apk"
+          ],
+          "options": {}
+        },
+        "bundle-android": {
+          "executor": "@nrwl/react-native:bundle",
+          "options": {
+            "entryFile": "apps/mobile/src/main.tsx",
+            "platform": "android",
+            "bundleOutput": "dist/apps/mobile/android/main.bundle"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/mobile/**/*.{js,ts,tsx}"
+            ]
+          }
+        },
+        "sync-deps": {
+          "executor": "@nrwl/react-native:sync-deps",
+          "options": {}
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/mobile"
+          ],
+          "options": {
+            "jestConfig": "apps/mobile/jest.config.js",
             "passWithNoTests": true
           }
         }

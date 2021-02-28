@@ -28,6 +28,7 @@
     "website-e2e": { "tags": [], "implicitDependencies": ["website"] },
     "apollo": { "tags": [] },
     "workshop-web": { "tags": [] },
-    "styles": { "tags": [] }
+    "styles": { "tags": [] },
+    "mobile": { "tags": [] }
   }
 }

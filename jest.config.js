@@ -4,5 +4,6 @@ module.exports = {
     '<rootDir>/libs/apollo',
     '<rootDir>/libs/workshop-web',
     '<rootDir>/libs/styles',
+    '<rootDir>/apps/mobile',
   ],
 };
