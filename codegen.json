@@ -1,0 +1,12 @@
+{
+  "schema": "https://graphql.anilist.co",
+  "generates": {
+    "libs/apollo/src/types.ts": {
+      "plugins": [
+        "typescript",
+        "typescript-operations",
+        "typescript-react-query"
+      ]
+    }
+  }
+}

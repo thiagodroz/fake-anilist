@@ -1,20 +1,11 @@
 {
   "version": 2,
-  "cli": {
-    "defaultCollection": "@nrwl/next"
-  },
+  "cli": { "defaultCollection": "@nrwl/next" },
   "defaultProject": "website",
   "generators": {
-    "@nrwl/react": {
-      "application": {
-        "babel": true
-      }
-    },
+    "@nrwl/react": { "application": { "babel": true } },
     "@nrwl/next": {
-      "application": {
-        "style": "styled-components",
-        "linter": "eslint"
-      }
+      "application": { "style": "styled-components", "linter": "eslint" }
     }
   },
   "projects": {
@@ -30,16 +21,11 @@
             "root": "apps/website",
             "outputPath": "dist/apps/website"
           },
-          "configurations": {
-            "production": {}
-          }
+          "configurations": { "production": {} }
         },
         "serve": {
           "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "website:build",
-            "dev": true
-          },
+          "options": { "buildTarget": "website:build", "dev": true },
           "configurations": {
             "production": {
               "buildTarget": "website:build:production",
@@ -49,9 +35,7 @@
         },
         "export": {
           "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "website:build:production"
-          }
+          "options": { "buildTarget": "website:build:production" }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
@@ -82,15 +66,32 @@
             "devServerTarget": "website:serve"
           },
           "configurations": {
-            "production": {
-              "devServerTarget": "website:serve:production"
-            }
+            "production": { "devServerTarget": "website:serve:production" }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "options": { "lintFilePatterns": ["apps/website-e2e/**/*.{js,ts}"] }
+        }
+      }
+    },
+    "apollo": {
+      "root": "libs/apollo",
+      "sourceRoot": "libs/apollo/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/website-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["libs/apollo/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/apollo"],
+          "options": {
+            "jestConfig": "libs/apollo/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

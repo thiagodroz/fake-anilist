@@ -7,7 +7,7 @@ This project was generated using [Nx](https://nx.dev).
 
 ## Libraries
 
-## Current Dependency Graph
+- [Apollo](docs/libraries/apollo.md)
 
 ## Generate an application
 
