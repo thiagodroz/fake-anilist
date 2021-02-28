@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fake-anilist/apollo": ["libs/apollo/src/index.ts"]
+      "@fake-anilist/apollo": ["libs/apollo/src/index.ts"],
+      "@fake-anilist/workshop-web": ["libs/workshop-web/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

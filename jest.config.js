@@ -1,3 +1,7 @@
 module.exports = {
-  projects: ['<rootDir>/apps/website', '<rootDir>/libs/apollo'],
+  projects: [
+    '<rootDir>/apps/website',
+    '<rootDir>/libs/apollo',
+    '<rootDir>/libs/workshop-web',
+  ],
 };
