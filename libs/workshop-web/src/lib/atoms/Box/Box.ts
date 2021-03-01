@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { FlexStyle } from 'react-native';
 
-import { boxStyles, StyledBoxProps } from '@seller-frontend/styles';
+import { boxStyles, StyledBoxProps } from '@fake-anilist/styles';
 
 import { HtmlTag } from '../../../models/Html';
 

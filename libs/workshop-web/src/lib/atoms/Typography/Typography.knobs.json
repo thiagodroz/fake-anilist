@@ -1,0 +1,87 @@
+{
+  "as": {
+    "label": "as",
+    "options": {
+      "h1": "h1",
+      "h2": "h2",
+      "h3": "h3",
+      "h4": "h4",
+      "h5": "h5",
+      "h6": "h6",
+      "b": "b",
+      "blockquote": "blockquote",
+      "code": "code",
+      "em": "em",
+      "i": "i",
+      "label": "label",
+      "mark": "mark",
+      "p": "p",
+      "pre": "pre",
+      "q": "q",
+      "small": "small",
+      "span": "span",
+      "strong": "strong",
+      "sub": "sub",
+      "sup": "sup"
+    },
+    "default": "span"
+  },
+  "fontFamily": {
+    "label": "font-family",
+    "options": {
+      "body": "body",
+      "heading": "heading",
+      "mono": "mono"
+    },
+    "default": "body"
+  },
+  "fontSize": {
+    "label": "font-size",
+    "options": {
+      "xsm": "xsm",
+      "sm": "sm",
+      "md": "md",
+      "lg": "lg",
+      "xlg": "xlg",
+      "xxlg": "xxlg"
+    },
+    "default": "md"
+  },
+  "fontWeight": {
+    "label": "font-weight",
+    "options": {
+      "normal": "normal",
+      "regular": "regular",
+      "bold": "bold"
+    },
+    "default": "normal"
+  },
+  "fontStyle": {
+    "label": "font-style",
+    "options": {
+      "normal": "normal",
+      "italic": "italic"
+    },
+    "default": "normal"
+  },
+  "textDecorationLine": {
+    "label": "text-decoration-line",
+    "options": {
+      "none": "none",
+      "underline": "underline",
+      "line-through": "line-through",
+      "underline line-through": "underline line-through"
+    },
+    "default": "none"
+  },
+  "textDecorationStyle": {
+    "label": "text-decoration-style",
+    "options": {
+      "solid": "solid",
+      "double": "double",
+      "dotted": "dotted",
+      "dashed": "dashed"
+    },
+    "default": "solid"
+  }
+}

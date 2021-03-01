@@ -1,7 +1,7 @@
 import React from 'react';
 import { text, number, select } from '@storybook/addon-knobs';
 
-import { Spacing } from '@seller-frontend/styles';
+import { Spacing } from '@fake-anilist/styles';
 
 import { Box } from './Box';
 import knobs from './Box.knobs.json';
